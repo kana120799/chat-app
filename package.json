@@ -1,0 +1,43 @@
+{
+  "name": "mern-chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat application built with MERN stack and Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "./start.sh",
+    "install-all": "cd backend && npm install && cd ../frontend/chat-frontend && pnpm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend/chat-frontend && pnpm run dev --host\"",
+    "build": "cd frontend/chat-frontend && pnpm run build",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend/chat-frontend && pnpm run dev --host"
+  },
+  "keywords": [
+    "mern",
+    "chat",
+    "socket.io",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "real-time",
+    "messaging"
+  ],
+  "author": "MERN Chat App",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/mern-chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/mern-chat-app/issues"
+  },
+  "homepage": "https://github.com/your-username/mern-chat-app#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+
